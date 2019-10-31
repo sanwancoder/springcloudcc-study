@@ -12,6 +12,8 @@
     <module>common</module>
     <module>eureka</module>
     <module>zuul</module>
+    <module>hello</module>
+    <module>hello-service-api</module>
   </modules>
 
 
@@ -25,7 +27,6 @@
     <java.version>1.8</java.version>
     <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
   </properties>
-
 
   <dependencyManagement>
     <dependencies>
@@ -45,13 +46,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-
-    <!-- springcloud -->
-<!--    <dependency>-->
-<!--      <groupId>org.springframework.cloud</groupId>-->
-<!--      <artifactId>spring-cloud-starter-eureka</artifactId>-->
-<!--      <version>1.4.4.RELEASE</version>-->
-<!--    </dependency>-->
 
     <dependency>
       <groupId>org.springframework.cloud</groupId>

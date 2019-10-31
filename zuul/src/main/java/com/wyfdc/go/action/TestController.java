@@ -1,4 +1,4 @@
-package com.wyfdc.go.controller;
+package com.wyfdc.go.action;
 
 import com.wyfdc.go.common.response.ResponseData;
 import java.util.Date;
