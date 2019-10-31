@@ -7,15 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zuul" />
-        <module name="hello" />
+        <module name="springsession-demo" />
         <module name="common" />
         <module name="eureka" />
+        <module name="hello" />
         <module name="hello-service-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-session-demo" target="1.8" />
-      <module name="springsession-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
