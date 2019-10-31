@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Author: wuqing
+ * @Author: Woo
  */
 @RequestMapping("/api/hello")
 @RestController
