@@ -1,6 +1,7 @@
 package com.wyfdc.go.common.exception;
 
 
+import com.wyfdc.go.common.codes.Codes;
 import com.wyfdc.go.common.codes.ResponseCode;
 
 /**
@@ -20,16 +21,22 @@ public class BizException extends RuntimeException {
     this.code = ResponseCode.FAILED.getCode();
   }
 
-  public BizException(final String detailedMessage,int code,String msg){
+  public BizException(final String detailedMessage,Integer code,String msg){
     super(detailedMessage);
     this.code = code;
     this.message = msg;
   }
 
-  public BizException(final String msg,ResponseCode responseCode){
-    super(msg);
-    this.code = responseCode.getCode();
-    this.message = responseCode.getMessage();
+  public BizException(final String msg,Integer code){
+    this(msg,code,msg);
+  }
+
+  public BizException(final String detailedMessage, Codes codes){
+    this(detailedMessage,codes.getCode(),codes.getMessage());
+  }
+
+  public BizException(Codes codes){
+    this(null,codes);
   }
 
   public Integer getCode() {

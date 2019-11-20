@@ -39,6 +39,8 @@ public class ImageUtils {
       return data;
     } catch (IOException e) {
       log.error("getFileByNetwork error. " + url, e);
+    }finally {
+
     }
     return null;
   }
