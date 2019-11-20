@@ -3,7 +3,7 @@ package com.wyfdc.go.common.utils;
 
 import org.springframework.util.StringUtils;
 /**
- * @Author: wuqing
+ * @Author:  
  */
 public class StringUtil {
 

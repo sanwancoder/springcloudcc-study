@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @Author: wuqing
+ * @Author:  
  */
 @FeignClient(name="hello")
 @RequestMapping("/api/hello")
