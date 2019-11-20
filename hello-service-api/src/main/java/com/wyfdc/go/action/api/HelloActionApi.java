@@ -1,14 +1,13 @@
 package com.wyfdc.go.action.api;
 
 import com.wyfdc.go.common.response.ResponseData;
-import java.util.Date;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @Author: Woo
+ *
  */
 @FeignClient(name="hello")
 @RequestMapping("/api/hello")
