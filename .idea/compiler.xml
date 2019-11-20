@@ -7,9 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zuul" />
-        <module name="hello" />
+        <module name="redis-demo" />
         <module name="common" />
         <module name="eureka" />
+        <module name="hello" />
         <module name="hello-service-api" />
       </profile>
     </annotationProcessing>
@@ -24,6 +25,7 @@
       <module name="eureka" options="-parameters" />
       <module name="hello" options="-parameters" />
       <module name="hello-service-api" options="-parameters" />
+      <module name="redis-demo" options="-parameters" />
       <module name="spring-session-demo" options="-parameters" />
       <module name="springcloudcc-study" options="-parameters" />
       <module name="springsession-demo" options="-parameters" />
