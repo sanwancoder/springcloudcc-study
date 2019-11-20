@@ -1,0 +1,22 @@
+server:
+  port: 15005
+
+
+spring:
+  application:
+    name: springboot-mongo
+
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: study
+
+# 打印url api请求
+# 打印mongodb日志
+logging:
+  level:
+    root: INFO
+    java.sql: TRACE
+    org .springframework.data.mongodb: DEBUG
+    org.springframework.web: DEBUG

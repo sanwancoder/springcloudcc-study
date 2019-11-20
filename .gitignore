@@ -130,3 +130,5 @@ fabric.properties
 target/**
 
 .idea/workspace.xml
+.idea/compiler.xml
+.idea/encodings.xml
