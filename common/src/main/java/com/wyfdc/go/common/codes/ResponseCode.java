@@ -3,7 +3,7 @@ package com.wyfdc.go.common.codes;
 /**
  * @Author: Woo
  */
-public enum ResponseCode implements Codes {
+public enum ResponseCode {
   SUCCESS(0,"成功"),
   SERVER_ERROR(600,"服务器内部错误"),
   FAILED(700,"关联系统内部错误")
@@ -17,18 +17,16 @@ public enum ResponseCode implements Codes {
     this.message = message;
   }
 
-  @Override
   public Integer getCode() {
     return code;
   }
 
-  @Override
-  public String getMessage() {
-    return message;
-  }
-
   public void setCode(Integer code) {
     this.code = code;
+  }
+
+  public String getMessage() {
+    return message;
   }
 
   public void setMessage(String message) {

@@ -10,13 +10,13 @@ public class PageResultVO<T> {
 
   private List<T> records = Collections.emptyList();;
 
-  private Integer total;
+  private Long total;
 
   private Integer pageNo;
 
   private Integer pageSize;
 
-  public PageResultVO(List<T> records, Integer total, Integer pageNo, Integer pageSize) {
+  public PageResultVO(List<T> records, Long total, Integer pageNo, Integer pageSize) {
     this.records = records;
     this.total = total;
     this.pageNo = pageNo;
@@ -50,11 +50,11 @@ public class PageResultVO<T> {
     this.records = records;
   }
 
-  public Integer getTotal() {
+  public Long getTotal() {
     return total;
   }
 
-  public void setTotal(Integer total) {
+  public void setTotal(Long total) {
     this.total = total;
   }
 }

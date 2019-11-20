@@ -128,3 +128,5 @@ fabric.properties
 .idea/**
 
 target/**
+
+.idea/workspace.xml
