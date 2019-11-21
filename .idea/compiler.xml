@@ -11,6 +11,7 @@
         <module name="common" />
         <module name="eureka" />
         <module name="hello-service-api" />
+        <module name="quartz-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,6 +25,7 @@
       <module name="eureka" options="-parameters" />
       <module name="hello" options="-parameters" />
       <module name="hello-service-api" options="-parameters" />
+      <module name="quartz-demo" options="-parameters" />
       <module name="spring-session-demo" options="-parameters" />
       <module name="springcloudcc-study" options="-parameters" />
       <module name="springsession-demo" options="-parameters" />
