@@ -7,13 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zuul" />
-        <module name="hello" />
+        <module name="transaction-demo" />
         <module name="common" />
         <module name="eureka" />
+        <module name="hello" />
         <module name="hello-service-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="kafka-consumer-demo" target="1.8" />
+      <module name="kafka-producer-demo" target="1.8" />
       <module name="spring-session-demo" target="1.8" />
       <module name="springsession-demo" target="1.8" />
     </bytecodeTargetLevel>
@@ -27,6 +30,7 @@
       <module name="spring-session-demo" options="-parameters" />
       <module name="springcloudcc-study" options="-parameters" />
       <module name="springsession-demo" options="-parameters" />
+      <module name="transaction-demo" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>

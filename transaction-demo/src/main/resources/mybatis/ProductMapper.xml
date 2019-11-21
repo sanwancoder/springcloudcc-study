@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wyfdc.go.transaction.demo.mapper.ProductMapper">
+
+  <select id="getProduct" resultType="com.wyfdc.go.transaction.demo.dto.Product">
+    SELECT product_id as productID,
+        name as name,
+        code as code,
+        price as price,
+        amount as amount
+    FROM Product p
+    where 1=1
+    <if test="productID != null">
+      AND p.product_id=#{productID}
+    </if>
+    <if test="code != null">
+      AND p.code=#{code}
+    </if>
+  </select>
+
+  <update id="updateProduct">
+    update test.Product a set a.amount = #{amount}
+       where a.product_id=#{productID}
+  </update>
+
+  <insert id="saveProduct">
+    INSERT INTO Product VALUES
+    (#{productID}, #{name},#{code},#{price},#{amount})
+  </insert>
+
+</mapper>
