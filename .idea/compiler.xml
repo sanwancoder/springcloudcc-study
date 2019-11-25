@@ -8,12 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="zuul" />
         <module name="hello" />
-        <module name="common" />
+        <module name="xxl-job-executor-demo1" />
         <module name="eureka" />
         <module name="hello-service-api" />
+        <module name="common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mongo-demo" target="1.8" />
+      <module name="quartz-demo" target="1.8" />
       <module name="spring-session-demo" target="1.8" />
       <module name="springsession-demo" target="1.8" />
     </bytecodeTargetLevel>
@@ -24,9 +27,11 @@
       <module name="eureka" options="-parameters" />
       <module name="hello" options="-parameters" />
       <module name="hello-service-api" options="-parameters" />
+      <module name="mongo-demo" options="-parameters" />
       <module name="spring-session-demo" options="-parameters" />
       <module name="springcloudcc-study" options="-parameters" />
       <module name="springsession-demo" options="-parameters" />
+      <module name="xxl-job-executor-demo1" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>
