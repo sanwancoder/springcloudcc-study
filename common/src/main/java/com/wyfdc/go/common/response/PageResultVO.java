@@ -12,6 +12,8 @@ public class PageResultVO<T> {
 
   private Long total;
 
+  private Long pages;
+
   private Integer pageNo;
 
   private Integer pageSize;
@@ -21,6 +23,23 @@ public class PageResultVO<T> {
     this.total = total;
     this.pageNo = pageNo;
     this.pageSize = pageSize;
+  }
+
+  public PageResultVO(List<T> records, Long total, Long pages, Integer pageNo,
+      Integer pageSize) {
+    this.records = records;
+    this.total = total;
+    this.pages = pages;
+    this.pageNo = pageNo;
+    this.pageSize = pageSize;
+  }
+
+  public Long getPages() {
+    return pages;
+  }
+
+  public void setPages(Long pages) {
+    this.pages = pages;
   }
 
   public PageResultVO() {
