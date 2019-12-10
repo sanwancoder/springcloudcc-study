@@ -1,6 +1,7 @@
 package com.wyfdc.go.common.response;
 
 
+import com.wyfdc.go.common.codes.IResponseCode;
 import com.wyfdc.go.common.codes.ResponseCode;
 
 /**
@@ -19,7 +20,7 @@ public class ResponseData<T> {
     this(data,ResponseCode.SUCCESS);
   }
 
-  public ResponseData(T data, ResponseCode responseCode){
+  public ResponseData(T data, IResponseCode responseCode){
     this(data,responseCode.getCode(),responseCode.getMessage());
   }
 
