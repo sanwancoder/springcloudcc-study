@@ -1,8 +1,8 @@
 package com.wyfdc.go.common.response;
 
 
-import com.wyfdc.go.common.codes.IResponseCode;
 import com.wyfdc.go.common.codes.ResponseCode;
+import com.wyfdc.go.common.codes.SuccessCode;
 
 /**
  * @Author: Woo
@@ -17,22 +17,21 @@ public class ResponseData<T> {
   private String message;
 
   public ResponseData(T data){
-    this(data,ResponseCode.SUCCESS);
+    this(data, SuccessCode.SUCCESS);
   }
 
-  public ResponseData(T data, IResponseCode responseCode){
+  public ResponseData(T data, ResponseCode responseCode){
     this(data,responseCode.getCode(),responseCode.getMessage());
-  }
-
-
-  public ResponseData() {
-    this(null,ResponseCode.SUCCESS);
   }
 
   public ResponseData(T data, Integer code, String message) {
     this.data = data;
     this.code = code;
     this.message = message;
+  }
+
+  public ResponseData() {
+    this(null, SuccessCode.SUCCESS);
   }
 
   public T getData() {

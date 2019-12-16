@@ -1,6 +1,6 @@
 package com.wyfdc.go.common.advice;
 
-import com.wyfdc.go.common.codes.ResponseCode;
+import com.wyfdc.go.common.codes.ErrorCode;
 import com.wyfdc.go.common.exception.BizException;
 import com.wyfdc.go.common.response.ResponseData;
 import lombok.extern.slf4j.Slf4j;
@@ -20,14 +20,14 @@ public class ExceptionHandlerAdvice {
   @ExceptionHandler(value = { Exception.class })
   public ResponseData<String> apiExceptionHandler(Exception ex) {
     log.error("ExceptionHandlerAdvice 异常抛出: {}", ex);
-    return new ResponseData<String>(ex.getMessage(), ResponseCode.SERVER_ERROR);
+    return new ResponseData<String>(ex.getMessage(), ErrorCode.SERVER_ERROR);
   }
 
 
   @ExceptionHandler(value = { IllegalArgumentException.class })
-  public ResponseData<String> illegalExceptionHandler(Exception ex) {
+  public ResponseData<String> illegalExceptionHandler(IllegalArgumentException ex) {
     log.error("ExceptionHandlerAdvice 异常抛出: {}", ex);
-    return new ResponseData<String>(ex.getMessage(), ResponseCode.SERVER_ERROR.getCode(),
+    return new ResponseData<String>(ex.getMessage(), ErrorCode.SERVER_ERROR.getCode(),
         ex.getMessage());
   }
 
