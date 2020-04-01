@@ -9,11 +9,11 @@ import com.wyfdc.go.transaction.demo.dto.Account;
  */
 public interface AccountService {
 
-  public void saveAccount(Account account);
+   void saveAccount(Account account);
 
-  public Account getAccountByUserId(String userID);
+   Account getAccountByUserId(String userID);
 
-  public void updateAccountBalance(String userID, int balance) throws BizException;
+   void updateAccountBalance(String userID, int balance) throws BizException;
 
 
 }

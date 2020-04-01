@@ -1,6 +1,5 @@
 USE test;
 
-DROP TABLE Product;
 
 CREATE TABLE IF NOT EXISTS Product (
   product_id INT(11) NOT NULL AUTO_INCREMENT COMMENT '主键id',

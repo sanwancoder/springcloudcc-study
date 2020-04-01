@@ -1,6 +1,5 @@
 USE test;
 
-DROP TABLE account;
 
 CREATE TABLE IF NOT EXISTS account (
   id INT(11) NOT NULL AUTO_INCREMENT COMMENT '主键id',

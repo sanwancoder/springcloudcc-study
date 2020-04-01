@@ -1,7 +1,5 @@
 USE test;
 
-DROP TABLE t_order;
-
 CREATE TABLE IF NOT EXISTS t_order (
   id INT(11) NOT NULL AUTO_INCREMENT COMMENT '主键id',
   product_id INT(11) NOT NULL COMMENT '产品表product主键',

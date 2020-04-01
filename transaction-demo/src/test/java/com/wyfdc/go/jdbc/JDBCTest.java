@@ -7,6 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -17,9 +18,12 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @SpringBootTest(classes= TransactionDemoApp.class)
 public class JDBCTest {
 
+  @Autowired
+  private ConnectionUtil connectionUtil;
+
   @Test
   public void testJDBC(){
-    Connection conn = ConnectionUtil.getConnection();
+    Connection conn = connectionUtil.getConnection();
     int i = 0;
     String sql = "INSERT INTO account(user_id,user_name,balance) VALUES (?,?,?)";
     PreparedStatement pstmt;
@@ -33,6 +37,8 @@ public class JDBCTest {
       conn.close();
     } catch (SQLException e) {
       e.printStackTrace();
+    }finally {
+
     }
     System.out.println(" ---->>> " + i);
   }
