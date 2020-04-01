@@ -3,7 +3,7 @@
 <mapper namespace="com.wyfdc.go.transaction.demo.mapper.AccountMapper">
 
   <select id="getAccountByUserId"
-    resultType="com.wyfdc.go.transaction.demo.dto.Account"
+    resultType="com.wyfdc.go.transaction.demo.dto.UserPO"
     parameterType="String">
     SELECT id AS id,
            user_name AS userName,
@@ -18,7 +18,7 @@
        where a.user_id=#{userID}
   </update>
 
-  <insert id="saveAccount" parameterType="com.wyfdc.go.transaction.demo.dto.Account">
+  <insert id="saveAccount" parameterType="com.wyfdc.go.transaction.demo.dto.UserPO">
     INSERT INTO account(user_id,user_name,balance) VALUES (#{account.userID},#{account.userName},#{account.balance})
   </insert>
 

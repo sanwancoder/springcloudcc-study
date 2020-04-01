@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.wyfdc.go.transaction.demo.mapper.OrderMapper">
 
-  <insert id="saveOrder" parameterType="com.wyfdc.go.transaction.demo.dto.OrderDTO">
+  <insert id="saveOrder" parameterType="com.wyfdc.go.transaction.demo.dto.OrderPO">
     INSERT INTO t_order(product_id,user_id,amount)
      VALUES(#{orderDTO.productID},#{orderDTO.userID},#{orderDTO.amount});
   </insert>

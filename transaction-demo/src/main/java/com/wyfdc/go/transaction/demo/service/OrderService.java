@@ -1,14 +1,13 @@
 package com.wyfdc.go.transaction.demo.service;
 
-import com.wyfdc.go.transaction.demo.dto.OrderDTO;
+import com.wyfdc.go.transaction.demo.dto.OrderPO;
 
 /**
  * @Author:
  */
 public interface OrderService {
 
-  public void saveOrder(OrderDTO orderDTO);
+   void saveOrder(OrderPO orderDTO);
 
-  public String buyProduct(String userID, String productID);
 
 }

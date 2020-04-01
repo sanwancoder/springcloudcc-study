@@ -1,19 +1,13 @@
 package com.wyfdc.go.transaction.demo.mapper;
 
-import com.wyfdc.go.transaction.demo.dto.Account;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
+import com.wyfdc.go.transaction.demo.dto.UserPO;
+
+import tk.mybatis.mapper.common.Mapper;
 
 /**
  * @Author:
  */
-@Mapper
-public interface AccountMapper {
+public interface AccountMapper extends Mapper<UserPO> {
 
-  public void saveAccount(@Param(value = "account") Account account);
 
-  public Account getAccountByUserId(@Param("userID") String userID);
-
-  public void updateAccountBalance(@Param("userID") String userID,
-      @Param("balance") int balance);
 }

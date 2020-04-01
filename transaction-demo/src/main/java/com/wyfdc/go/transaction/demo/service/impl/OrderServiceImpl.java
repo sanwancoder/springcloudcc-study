@@ -1,12 +1,12 @@
 package com.wyfdc.go.transaction.demo.service.impl;
 
-import com.wyfdc.go.transaction.demo.dto.OrderDTO;
+import com.wyfdc.go.transaction.demo.dto.OrderPO;
 import com.wyfdc.go.transaction.demo.mapper.OrderMapper;
-import com.wyfdc.go.transaction.demo.service.AccountService;
 import com.wyfdc.go.transaction.demo.service.OrderService;
-import com.wyfdc.go.transaction.demo.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * @Author:
@@ -14,16 +14,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class OrderServiceImpl implements OrderService {
 
-  @Autowired
+  @Resource
   private OrderMapper orderMapper;
 
   @Override
-  public void saveOrder(OrderDTO orderDTO) {
-    orderMapper.saveOrder(orderDTO);
+  public void saveOrder(OrderPO orderDTO) {
+    orderMapper.insert(orderDTO);
   }
 
-  @Override
-  public String buyProduct(String userID, String productID) {
-    return null;
-  }
 }

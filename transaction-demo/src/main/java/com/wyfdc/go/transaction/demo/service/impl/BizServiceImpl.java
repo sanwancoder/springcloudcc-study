@@ -26,8 +26,8 @@ public class BizServiceImpl implements BizService {
    */
   @Override
   public void insertWithoutTransaction() throws BizException {
-    accountService.updateAccountBalance("zhangsan001",80);
-    productService.updateProduct(null,19);
+
+
   }
 
   /**
@@ -37,8 +37,7 @@ public class BizServiceImpl implements BizService {
   @Override
   @Transactional(rollbackFor = BizException.class)
   public void insertWithTransaction() throws BizException {
-    accountService.updateAccountBalance("zhangsan001",50);
-    productService.updateProduct(null,9);
+
   }
 
 }

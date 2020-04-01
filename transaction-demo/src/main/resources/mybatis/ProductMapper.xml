@@ -3,7 +3,7 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.wyfdc.go.transaction.demo.mapper.ProductMapper">
 
-  <select id="getProduct" resultType="com.wyfdc.go.transaction.demo.dto.Product">
+  <select id="getProduct" resultType="com.wyfdc.go.transaction.demo.dto.ProductPO">
     SELECT product_id as productID,
         name as name,
         code as code,

@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.Column;
 import javax.persistence.Table;
 
 /**
@@ -16,26 +17,29 @@ import javax.persistence.Table;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Product {
+@Table(name = "t_Product")
+public class ProductPO {
   //主键
+  @Column(name ="product_id" )
   private Long productID;
 
   //产品名称
+  @Column(name = "NAME")
   private String name;
 
-  //产品编码
-  private String code;
 
   //价格
+  @Column(name = "price")
   private double price;
 
   // 数量
-  private int amount;
+  @Column(name = "stock_quantity")
+  private int stockQuantity;
 
-  public Product(String name, String code, double price, int amount) {
+
+  public ProductPO(String name, double price, int amount) {
     this.name = name;
-    this.code = code;
     this.price = price;
-    this.amount = amount;
+    this.stockQuantity = amount;
   }
 }
