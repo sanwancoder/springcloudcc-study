@@ -29,11 +29,11 @@ public class UserPO {
 
   //余额
   @Column(name = "balance")
-  private int balance;
+  private Double balance;
 
   public UserPO(String userID,
                 String userName,
-                int balance) {
+                Double balance) {
     this.userID = userID;
     this.userName = userName;
     this.balance = balance;

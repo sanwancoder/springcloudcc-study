@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wyfdc.go.transaction.demo.mapper.UserMapper">
+
+  <update id="updateAccountBalance">
+    update test.t_user a set a.balance = #{balance}
+       where a.user_id=#{userID}
+  </update>
+
+
+</mapper>

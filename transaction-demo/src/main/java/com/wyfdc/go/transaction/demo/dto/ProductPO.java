@@ -30,14 +30,14 @@ public class ProductPO {
 
   //价格
   @Column(name = "price")
-  private double price;
+  private Double price;
 
   // 数量
   @Column(name = "stock_quantity")
-  private int stockQuantity;
+  private Integer stockQuantity;
 
 
-  public ProductPO(String name, double price, int amount) {
+  public ProductPO(String name, double price, Integer amount) {
     this.name = name;
     this.price = price;
     this.stockQuantity = amount;

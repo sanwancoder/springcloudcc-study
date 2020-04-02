@@ -30,15 +30,15 @@ public class OrderPO {
 
   //数量
   @Column(name = "quantity")
-  private int quantity;
+  private Integer quantity;
 
   //支付金额
   @Column(name = "pay_amount")
-  private double payAmount;
+  private Double payAmount;
 
   public OrderPO(String userID,
                  String productID,
-                 int quantity, double payAmount){
+                 Integer quantity, Double payAmount){
     this.userID = userID;
     this.productID = productID;
     this.quantity = quantity;

@@ -6,8 +6,7 @@ import com.wyfdc.go.common.exception.BizException;
  */
 public interface BizService {
 
-  public void insertWithoutTransaction() throws BizException;
-
-  public void insertWithTransaction() throws BizException;
+   void insertWithoutTransaction() throws BizException;
+   void insertWithinTransaction() throws BizException;
 
 }

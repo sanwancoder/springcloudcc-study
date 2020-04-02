@@ -25,13 +25,13 @@ public class JDBCTest {
   public void testJDBC(){
     Connection conn = connectionUtil.getConnection();
     int i = 0;
-    String sql = "INSERT INTO account(user_id,user_name,balance) VALUES (?,?,?)";
+    String sql = "INSERT INTO t_user(user_id,user_name,balance) VALUES (?,?,?)";
     PreparedStatement pstmt;
     try {
       pstmt = (PreparedStatement) conn.prepareStatement(sql);
       pstmt.setString(1, "wangwu001");
       pstmt.setString(2, "王五");
-      pstmt.setInt(3, 1000);
+      pstmt.setDouble(3, 100.78);
       i = pstmt.executeUpdate();
       pstmt.close();
       conn.close();

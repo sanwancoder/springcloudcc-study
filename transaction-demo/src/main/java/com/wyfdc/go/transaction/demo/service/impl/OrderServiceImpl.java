@@ -3,7 +3,6 @@ package com.wyfdc.go.transaction.demo.service.impl;
 import com.wyfdc.go.transaction.demo.dto.OrderPO;
 import com.wyfdc.go.transaction.demo.mapper.OrderMapper;
 import com.wyfdc.go.transaction.demo.service.OrderService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

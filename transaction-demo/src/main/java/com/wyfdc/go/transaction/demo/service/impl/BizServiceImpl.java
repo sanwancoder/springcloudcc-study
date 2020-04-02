@@ -1,7 +1,7 @@
 package com.wyfdc.go.transaction.demo.service.impl;
 
 import com.wyfdc.go.common.exception.BizException;
-import com.wyfdc.go.transaction.demo.service.AccountService;
+import com.wyfdc.go.transaction.demo.service.UserService;
 import com.wyfdc.go.transaction.demo.service.BizService;
 import com.wyfdc.go.transaction.demo.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class BizServiceImpl implements BizService {
 
   @Autowired
-  private AccountService accountService;
+  private UserService accountService;
 
   @Autowired
   private ProductService productService;
@@ -36,7 +36,7 @@ public class BizServiceImpl implements BizService {
    */
   @Override
   @Transactional(rollbackFor = BizException.class)
-  public void insertWithTransaction() throws BizException {
+  public void insertWithinTransaction() throws BizException {
 
   }
 

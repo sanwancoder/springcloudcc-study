@@ -7,7 +7,7 @@ import com.wyfdc.go.transaction.demo.dto.UserPO;
 /**
  * @Author:
  */
-public interface AccountService {
+public interface UserService {
 
 
    void saveAccount(UserPO account);
