@@ -10,6 +10,14 @@ CREATE TABLE IF NOT EXISTS t_user (
 ) ENGINE=INNODB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 
+create unique index t_user_userID_IDX on t_user(user_id);
+
+-- drop INDEX t_user_userID_IDX on test.t_user;
+
+-- show INDEX from test.t_user;
+
+
+
 INSERT INTO t_user(user_id,user_name,balance) VALUES ("zhangsan2","张三",200.25);
 
 INSERT INTO t_user(user_id,user_name,balance) VALUES ("lisi001","李四",200.22);
