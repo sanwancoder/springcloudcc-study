@@ -6,16 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zuul" />
-        <module name="hello" />
-        <module name="common" />
-        <module name="eureka" />
-        <module name="hello-service-api" />
+        <module name="hmily-account" />
+        <module name="hmily-order" />
+        <module name="hmily-stock" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="hello" target="1.8" />
+      <module name="hello-service-api" target="1.7" />
       <module name="spring-session-demo" target="1.8" />
       <module name="springsession-demo" target="1.8" />
+      <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -24,6 +27,9 @@
       <module name="eureka" options="-parameters" />
       <module name="hello" options="-parameters" />
       <module name="hello-service-api" options="-parameters" />
+      <module name="hmily-account" options="-parameters" />
+      <module name="hmily-order" options="-parameters" />
+      <module name="hmily-stock" options="-parameters" />
       <module name="spring-session-demo" options="-parameters" />
       <module name="springcloudcc-study" options="-parameters" />
       <module name="springsession-demo" options="-parameters" />

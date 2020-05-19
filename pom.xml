@@ -14,6 +14,9 @@
     <module>zuul</module>
     <module>hello</module>
     <module>hello-service-api</module>
+    <module>hmily-stock</module>
+      <module>hmily-order</module>
+    <module>hmily-account</module>
   </modules>
 
 
