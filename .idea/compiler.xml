@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hmily-stock" />
         <module name="hmily-account" />
         <module name="hmily-order" />
-        <module name="hmily-stock" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

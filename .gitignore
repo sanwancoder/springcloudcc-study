@@ -247,3 +247,5 @@ springcloudcc-study.iml
 .idea/compiler.xml
 
 .idea/**
+
+logs/

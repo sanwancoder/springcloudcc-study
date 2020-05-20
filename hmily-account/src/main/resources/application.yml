@@ -16,42 +16,42 @@ spring:
     main:
         allow-bean-definition-overriding: true
 
-org:
-    dromara:
-         hmily :
-            serializer : kryo
-            recoverDelayTime : 128
-            retryMax : 30
-            scheduledDelay : 128
-            scheduledThreadMax :  10
-            repositorySupport : db
-            started: false
-            hmilyDbConfig :
-                 driverClassName  : com.mysql.jdbc.Driver
-                 url: jdbc:mysql://10.231.50.179:3306/hmily_account?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT&failOverReadOnly=false&autoReconnect=true
-                 username : root
-                 password : RYoYv5WUQOS
-
-       # repositorySupport : redis
-       #         hostName  : 192.168.1.68
-       #         port      :  6379
-       #         password  :
-
-
-       # repositorySupport : zookeeper
-       #         host      : 92.168.1.73:2181
-       #         sessionTimeOut      :  100000
-       #         rootPath  : /tcc
-
-       # repositorySupport : mongodb
-       #       mongoDbUrl  : 192.168.1.68:27017
-       #       mongoDbName  :  happylife
-       #       mongoUserName  : xiaoyu
-       #       mongoUserPwd   : 123456
-
-       # repositorySupport : file
-       #         path      : /account
-       #         prefix    :  account
+#org:
+#    dromara:
+#         hmily :
+#            serializer : kryo
+#            recoverDelayTime : 128
+#            retryMax : 30
+#            scheduledDelay : 128
+#            scheduledThreadMax :  10
+#            repositorySupport : db
+#            started: false
+#            hmilyDbConfig :
+#                 driverClassName  : com.mysql.jdbc.Driver
+#                 url: jdbc:mysql://10.231.50.179:3306/tcc?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT&failOverReadOnly=false&autoReconnect=true
+#                 username : root
+#                 password : RYoYv5WUQOS
+#
+#       # repositorySupport : redis
+#       #         hostName  : 192.168.1.68
+#       #         port      :  6379
+#       #         password  :
+#
+#
+#       # repositorySupport : zookeeper
+#       #         host      : 92.168.1.73:2181
+#       #         sessionTimeOut      :  100000
+#       #         rootPath  : /tcc
+#
+#       # repositorySupport : mongodb
+#       #       mongoDbUrl  : 192.168.1.68:27017
+#       #       mongoDbName  :  happylife
+#       #       mongoUserName  : xiaoyu
+#       #       mongoUserPwd   : 123456
+#
+#       # repositorySupport : file
+#       #         path      : /account
+#       #         prefix    :  account
 
 mybatis:
   type-aliases-package: org.dromara.hmily.demo.springcloud.account.entity
