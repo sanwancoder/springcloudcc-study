@@ -9,6 +9,7 @@
         <module name="zuul" />
         <module name="hello" />
         <module name="common" />
+        <module name="money" />
         <module name="eureka" />
         <module name="hello-service-api" />
       </profile>
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="spring-session-demo" target="1.8" />
       <module name="springsession-demo" target="1.8" />
+      <module name="tkMybatis-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -24,9 +26,11 @@
       <module name="eureka" options="-parameters" />
       <module name="hello" options="-parameters" />
       <module name="hello-service-api" options="-parameters" />
+      <module name="money" options="-parameters" />
       <module name="spring-session-demo" options="-parameters" />
       <module name="springcloudcc-study" options="-parameters" />
       <module name="springsession-demo" options="-parameters" />
+      <module name="tkMybatis-demo" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>
