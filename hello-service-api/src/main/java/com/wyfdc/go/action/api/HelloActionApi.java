@@ -16,7 +16,7 @@ public interface HelloActionApi {
 
 
   @GetMapping("/user-name/{userName}")
-  ResponseData<String> helloSir(@PathVariable("userName") String userName);
+  ResponseData<String>  helloSir(@PathVariable("userName") String userName);
 
 }
 
